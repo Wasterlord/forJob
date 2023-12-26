@@ -1,0 +1,63 @@
+$spacemin: 5;
+$spacemax: 100;
+$tick: 10;
+
+@for $i from $spacemin through $spacemax {
+//paddings
+  .p-#{$i} {
+    padding: calc(#{$i}rem / #{$tick}) !important;
+  }
+  .pt-#{$i} {
+    padding-top: calc(#{$i}rem / #{$tick}) !important;
+  }
+  .pb-#{$i} {
+    padding-bottom: calc(#{$i}rem / #{$tick}) !important;
+  }
+  .pl-#{$i} {
+    padding-left: calc(#{$i}rem / #{$tick}) !important;
+  }
+  .pr-#{$i} {
+    padding-right: calc(#{$i}rem / #{$tick}) !important;
+  }
+  .px-#{$i} {
+    padding-right: calc(#{$i}rem / #{$tick}) !important;
+    padding-left: calc(#{$i}rem / #{$tick}) !important;
+  }
+
+  .py-#{$i} {
+    padding-top: calc(#{$i}rem / #{$tick}) !important;
+    padding-bottom: calc(#{$i}rem / #{$tick}) !important;
+  }
+
+//margins
+
+  .m-#{$i} {
+    margin: calc(#{$i}rem / #{$tick}) !important;
+  }
+
+  .mt-#{$i} {
+    margin-top: calc(#{$i}rem / #{$tick}) !important;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: calc(#{$i}rem / #{$tick}) !important;
+  }
+
+  .ml-#{$i} {
+    margin-left: calc(#{$i}rem / #{$tick}) !important;
+  }
+
+  .mr-#{$i} {
+    margin-right: calc(#{$i}rem / #{$tick}) !important;
+  }
+
+  .mx-#{$i} {
+    margin-right: calc(#{$i}rem / #{$tick}) !important;
+    margin-left: calc(#{$i}rem / #{$tick}) !important;
+  }
+
+  .my-#{$i} {
+    margin-top: calc(#{$i}rem / #{$tick}) !important;
+    margin-bottom: calc(#{$i}rem / #{$tick}) !important;
+  }
+}
